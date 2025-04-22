@@ -69,66 +69,6 @@ class Book {
     public void setCategory(String cat){this.Category=cat;}
     public void setShelfId(String id) { this.shelfId = id; }
 
-    // Get a book by ID
-   /*  public Book getBookById(int id) {
-        try {
-            String sql = "SELECT books.*,shelf.shelfname From books Join shelf on books.shelfId=shelf.shelfId where bookId=?";
-            PreparedStatement prst = conn.prepareStatement(sql);
-            prst.setInt(1, id);
-            ResultSet rs = prst.executeQuery();
-            if (rs.next()) {
-                return new Book(
-                    rs.getInt("bookId"),
-                    rs.getString("title"),
-                    rs.getString("author"),
-                    rs.getBoolean("isAvailable"),
-                    rs.getString("category")
-                    ,rs.getString("shelfId")
-                );
-            }
-            prst.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }*/
-
-    /* 
-        // Count total books
-    public int countTotalBooks() {
-        try {
-            String sql = "SELECT COUNT(*) FROM books";
-            PreparedStatement prst = conn.prepareStatement(sql);
-            ResultSet rs = prst.executeQuery();
-            if (rs.next()) {
-                return rs.getInt(1);
-            }
-            prst.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return 0;
-    }
-     */
-    /* 
-     // Check if a book is available by ID
-    public boolean isBookAvailable(int id) {
-        try {
-            String sql = "SELECT isAvailable FROM books WHERE bookId = ?";
-            PreparedStatement prst = conn.prepareStatement(sql);
-            prst.setInt(1, id);
-            ResultSet rs = prst.executeQuery();
-            if (rs.next()) {
-                return rs.getBoolean("isAvailable");
-            }
-            prst.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-        */
-
     // Display full info
     public void displayInfo() {
         System.out.println(" Book Info:");
