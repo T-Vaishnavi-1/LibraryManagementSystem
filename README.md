@@ -1,6 +1,11 @@
 # LibraryManagementSystem
 
- Library Management System - Java Swing + MySQL
+Roll no: CS24B047 and CS24B048
+
+  Group no:24
+
+
+Library Management System - Java Swing + MySQL
 
 This is a **Library Management System** built using **Java Swing** for the GUI and **MySQL** for data storage. It allows users to sign up, log in, add books, borrow/return books, and search the collection. It’s designed as a desktop application with a clean, functional interface.
 
