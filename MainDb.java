@@ -100,13 +100,6 @@ public class MainDb extends JFrame{
         }
       });
 
-      returnButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e)
-        {
-            new returnBook(user.getUserId(user.getUsername()));
-        }
-      });
-
        setVisible(true);
 
     }
