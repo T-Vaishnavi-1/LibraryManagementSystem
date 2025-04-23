@@ -103,7 +103,7 @@ public class addBook extends JFrame{
                 String sql2="insert into shelf(location,capacity,shelfName) values(?,?,?)";
                 PreparedStatement ps=conn.prepareStatement(sql2);
                 ps.setString(1,"A");
-                ps.setInt(2,3);
+                ps.setInt(2,30);
                 ps.setString(3,cat);
                 ps.executeUpdate();
   
